@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-----------------------------
+Pequena telas: até 600px
+Celular: até 600px até 768px
+Tablet: 768 até 992px
+Desktop; 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+/* telas abaixo de 768px mostra o hamburguinho, caso contrário mostra sem hamburguinho */
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;        
+    }
+
+    main { /* tela máxima de 768px, telas grandes */
+        width: 768px;
+    }
+}
